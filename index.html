@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <title>DanubeHack 2015 - CTM</title>
+
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" media="screen" href="core/deck.core.css">
+
+  <!-- Extension CSS files go here. Remove or add as needed. -->
+  <link rel="stylesheet" media="screen" href="extensions/goto/deck.goto.css">
+  <link rel="stylesheet" media="screen" href="extensions/menu/deck.menu.css">
+  <link rel="stylesheet" media="screen" href="extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="extensions/status/deck.status.css">
+  <link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+	<style type="text/css" media="screen">
+			.hcenter {text-align: center;}
+			section.slide p, section.slide ul li { font-size: 1.5em; }
+			</ul>
+	</style>
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <!--<link rel="stylesheet" media="screen" href="themes/style/web-2.0.css">-->
+  <link rel="stylesheet" media="screen" href="themes/style/swiss.css">
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/transition/horizontal-slide.css">
+
+  <!-- Basic black and white print styles -->
+  <link rel="stylesheet" media="print" href="core/print.css">
+
+  <!-- Required Modernizr file -->
+  <script src="modernizr.custom.js"></script>
+</head>
+<body>
+  <div class="deck-container">
+
+    <!-- Begin slides. Just make elements with a class of slide. -->
+
+    <section class="slide">
+			<h1 style="font-size: 3em;">City Transport Map Bratislava</h1>
+			<h2 style="border: 0; position: absolute; bottom: 3em; width: 100%; text-align: center; padding: 0; margin:0 0 0 -1em; ">CTM</h2>
+
+			<div style="position:absolute; top: 2em; font-size: 1em; width: 100%; text-align: center; margin: 0 0 0 -2em;">
+			<img src="img/danubehack_logo.png" alt="" style=""/> DanubeHack 2015
+			</div>
+    </section>
+
+    <section class="slide">
+		<h2>Who</h2>
+		<h3>Richard Laffers (dev)</h3>
+				<ul>
+				<li>10+ year experience in HTML, Javascript, PHP</li>
+				<li>... and crazy about Go <span class="fa fa-smile-o"></span></li>
+				<li>https://github.com/rlaffers</li>
+				</ul>
+		<h3>Pavol Bučko (brainstorming)</h3>
+		<ul>
+			<li>web developer</li>
+		</ul>
+
+		<br/>
+		<br/>
+		<br/>
+
+		<p class="hcenter">We both work at <strong>MOVYS a.s.</strong> http://movys.sk</p>
+    </section>
+
+    <section class="slide">
+		<h2>Why</h2>
+		<ul>
+				<li class="slide"><span style="font-weight: bold; color: #CC0000;">Where's my bus?</span> </li>
+				<li class="slide">Have I missed it? <span class="fa fa-frown-o"></span> </li>
+		</ul>
+		<p class="slide">... but also:</p>
+
+		<ul class="slide">
+				<li>When will it come REALLY?</li>
+				<li>How do I get from A to B?</li>
+		</ul>
+    </section>
+
+		<section class="slide">
+			<h2>What's out there</h2>
+			<div class="slide">
+					<p>imhd.sk
+					<img src="img/virt_tab.png" alt="" />
+					</p>
+			</div>
+			<ul>
+				<li class="slide">No live map</li>
+				<li class="slide">No actual traffic conditions</li>
+			</ul>
+		</section>
+
+		<section class="slide">
+			<h2>Live map of city transportation vehicles</h2>
+			<img src="img/wireframe.png" alt="" />
+		</section>
+
+		<section class="slide">
+			<h2>What's next</h2>
+			<ul>
+				<li class="xslide">Traffic layer</li>
+				<li class="xslide">Bus stop layer</li>
+				<li class="xslide">Search (address &amp; bus stops)</li>
+				<li class="xslide">Integrate with Ride planner (imhd.sk)</li>
+				<li class="xslide">Integrate with <strong>virtual departure board</strong> at imhd.sk</li>
+				<li class="xslide">Push messages with WebSockets (faster updates, less net traffic, and the coolness factor)</li>
+				<li class="xslide">Better arrival times based on traffic and trends</li>
+				<li class="xslide">Mobile app</li>
+			</ul>
+		</section>
+
+		<section class="slide">
+		<h2>Credits</h2>
+		<ul>
+			<li>Ľubor Illek (imhd.sk)</li>
+		</ul>
+		</section>
+
+		<section class="slide">
+			<h2>Join us!</h2>
+			<p style="text-align: center;" style="csstransforms"> <strong class="vcenter" style="font-size: 3em;">github.com/rlaffers/ctm</strong> 
+			</p>
+			<p style="position: absolute; bottom: 1em; right: 2em; font-size: 1.5em;">rlaffers@gmail.com</p>
+		</section>
+
+		<section class="slide">
+				<h1>Q/A</h1>
+		</section>
+
+    <!-- End slides. -->
+
+    <!-- Begin extension snippets. Add or remove as needed. -->
+
+    <!-- deck.navigation snippet -->
+    <div aria-role="navigation">
+      <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+      <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+    </div>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status" aria-role="status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+
+    <!-- End extension snippets. -->
+  </div>
+
+<!-- Required JS files. -->
+<script src="jquery.min.js"></script>
+<script src="core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/goto/deck.goto.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+  $(function() {
+    $.deck('.slide');
+  });
+</script>
+</body>
+</html>
